@@ -1,4 +1,4 @@
- ## Mecanismo de pesquisa de Filmes feito com HTML, CSS e JavaScript puro.
+# Mecanismo de pesquisa de Filmes feito com HTML, CSS e JavaScript puro.
 ### Feito com a motivação de praticar lógica de programação, e manipulação da DOM.
 
 ---
