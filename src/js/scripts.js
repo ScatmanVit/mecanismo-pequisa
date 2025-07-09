@@ -1,5 +1,6 @@
-const searchInput = document.getElementById('search')
+/*Não foi definida função para essa feature porque ela é o único script em uso no site, o único do arquivo js*/
 
+const searchInput = document.getElementById('search')
 searchInput.addEventListener('input', (event) => {
    const value = formatString(event.target.value);
 
@@ -11,6 +12,7 @@ searchInput.addEventListener('input', (event) => {
       items.forEach(item => {
          const itemTitle = item.querySelector('.item-title').textContent
          const itemDescription = item.querySelector('.item-description').textContent
+         
          if (formatString(itemTitle).indexOf(value) !== -1
             || formatString(itemDescription).indexOf(value) !== -1
          ) {
