@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(206, 206, 255);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.input-group {
+   display: flex;
+   align-items: center;
+   background-color: #ffff;
+   padding: 8px 16px 8px 8px;
+   border-radius: 24px;
+   gap: 8px;
+}
+
+.input-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+   min-width: 32px;
+   min-height: 32px;
+   background-color: #6046ff;
+   color: #ffffff;
+}
+
+.input-search {
+   width: 100%;
+   border: none;
+   background-color: transparent;
+}
+
+.input-search:focus {
+   outline: none;
+}
+
+.items {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   list-style: none;
+   background-color: #FFF;
+   border-radius: 24px;
+   padding: 14px;
+   width: 350px;
+   max-height: 500px;
+   min-height: 500px;
+   overflow-y: auto;
+
+   /* Firefox */
+   scrollbar-width: thin;
+   scrollbar-color: #bbb transparent;
+}
+
+/* Chrome, Edge, etc */
+.items::-webkit-scrollbar {
+   width: 6px;
+}
+
+.items::-webkit-scrollbar-thumb {
+   background-color: #bbb;
+   border-radius: 10px;
+}
+
+.items::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.item {
+   display: flex;
+   gap: 12px;
+}
+
+.item-image img {
+   width: 100px;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.item-title {
+   font-size: 20px;
+   color: #333;
+}
+
+.item-subtitle {
+   font-size: 12px;
+   color: #666;
+}
+
+.item-description {
+   font-size: 12px;
+   color: #666;
+}
+
+#no-results {
+   display: none;
+   text-align: center;
+}
